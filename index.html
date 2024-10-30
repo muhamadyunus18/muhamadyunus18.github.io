@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Web App Landing Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">UltimateApp</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" id="dark-mode-toggle"><i class="fas fa-moon"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Hero Section -->
+    <header class="hero-section text-white text-center d-flex align-items-center justify-content-center" style="background-image: url('images/ero-bg.jpg');">
+        <video autoplay muted loop class="hero-video">
+            <source src="path/to/your/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
+        <div class="container">
+            <h1 class="display-4 animate_animated animate_fadeInDown">Revolutionize Your Business</h1>
+            <p class="lead animate_animated animate_fadeInUp">Empower. Innovate. Succeed.</p>
+            <a href="#register" class="btn btn-primary btn-lg mt-3 animate_animated animate_zoomIn">Join Us</a>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="container mt-5" data-aos="fade-up">
+        <h2 class="text-center mb-4">Powerful Features</h2>
+        <div class="row text-center">
+            <div class="col-md-3 col-sm-6">
+                <div class="card feature-card shadow-sm">
+                    <div class="card-body">
+                        <i class="fas fa-lock fa-2x mb-3"></i>
+                        <h5 class="card-title">Secure</h5>
+                        <p class="card-text">Advanced protection with multi-layered security.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card feature-card shadow-sm">
+                    <div class="card-body">
+                        <i class="fas fa-rocket fa-2x mb-3"></i>
+                        <h5 class="card-title">Performance</h5>
+                        <p class="card-text">Optimized for speed and scalability.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card feature-card shadow-sm">
+                    <div class="card-body">
+                        <i class="fas fa-users fa-2x mb-3"></i>
+                        <h5 class="card-title">Community</h5>
+                        <p class="card-text">A vibrant community for growth and learning.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card feature-card shadow-sm">
+                    <div class="card-body">
+                        <i class="fas fa-clipboard-check fa-2x mb-3"></i>
+                        <h5 class="card-title">Trusted</h5>
+                        <p class="card-text">Trusted by over 10,000 businesses worldwide hahahadfdgfffbgn.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="container mt-5">
+        <h2 class="text-center mb-4">Our Pricing Plans</h2>
+        <div class="text-center mb-4">
+            <label class="switch">
+                <input type="checkbox" id="toggle-plan">
+                <span class="slider round"></span>
+            </label>
+            <span id="plan-label">Monthly / Annually</span>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="pricing-card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Basic Plan</h5>
+                        <h3 class="card-price" id="basic-price">$10/month</h3>
+                        <p class="card-text">Perfect for individuals.</p>
+                        <ul class="list-group">
+                            <li class="list-group-item">5 Projects</li>
+                            <li class="list-group-item">Basic Support</li>
+                        </ul>
+                        <a href="#register" class="btn btn-outline-primary mt-3">Choose Plan</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="pricing-card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Pro Plan</h5>
+                        <h3 class="card-price" id="pro-price">$20/month</h3>
+                        <p class="card-text">Best for small businesses.</p>
+                        <ul class="list-group">
+                            <li class="list-group-item">10 Projects</li>
+                            <li class="list-group-item">Priority Support</li>
+                        </ul>
+                        <a href="#register" class="btn btn-outline-primary mt-3">Choose Plan</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="pricing-card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Enterprise Plan</h5>
+                        <h3 class="card-price" id="enterprise-price">$50/month</h3>
+                        <p class="card-text">For large organizations.</p>
+                        <ul class="list-group">
+                            <li class="list-group-item">Unlimited Projects</li>
+                            <li class="list-group-item">Dedicated Support</li>
+                        </ul>
+                        <a href="#register" class="btn btn-outline-primary mt-3">Choose Plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="container mt-5" data-aos="fade-up">
+        <h2 class="text-center mb-4">What Our Users Say</h2>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="card testimonial-card">
+                    <div class="card-body">
+                        <p class="card-text">"UltimateApp has transformed my business. The features are top-notch!"</p>
+                        <h5 class="card-title">John Doe</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">CEO, Tech Solutions</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card testimonial-card">
+                    <div class="card-body">
+                        <p class="card-text">"The customer support is fantastic! They helped me every step of the way."</p>
+                        <h5 class="card-title">Jane Smith</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Founder, Creative Agency</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card testimonial-card">
+                    <div class="card-body">
+                        <p class="card-text">"I can't imagine running my business without UltimateApp. Highly recommend!"</p>
+                        <h5 class="card-title">Robert Brown</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Manager, Retail Co.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="container mt-5">
+        <h2 class="text-center mb-4">Our Work</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/gallery1.jpg" class="img-fluid mb-4" alt="Gallery Image 1">
+            </div>
+            <div class="col-md-4">
+                <img src="images/gallery2.jpeg" class="img-fluid mb-4" alt="Gallery Image 2">
+            </div>
+            <div class="col-md-4">
+                <img src="images/gallery3.jpg" class="img-fluid mb-4" alt="Gallery Image 3">
+            </div>
+            <div class="col-md-4">
+                <img src="images/gallery4.jpg" class="img-fluid mb-4" alt="Gallery Image 3">
+            </div>
+            <div class="col-md-4">
+                <img src="images/gallery5.jpg" class="img-fluid mb-4" alt="Gallery Image 3">
+            </div>
+            <div class="col-md-4">
+                <img src="images/gallery6.jpeg" class="img-fluid mb-4" alt="Gallery Image 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="container mt-5">
+        <h2 class="text-center mb-4">Join Us Now</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Register</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mt-5">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="contactName">Name</label>
+                <input type="text" class="form-control" id="contactName" required>
+            </div>
+            <div class="form-group">
+                <label for="contactEmail">Email</label>
+                <input type="email" class="form-control" id="contactEmail" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 UltimateApp. All rights reserved.</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
+            <li class="list-inline-item"><a href="#" class="text-white">Terms of Service</a></li>
+        </ul>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
